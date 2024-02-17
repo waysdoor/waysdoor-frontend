@@ -5,7 +5,7 @@ import React, {  } from 'react'
 
 
  
-async function AllPosts({posts}) {
+ function AllPosts({posts}) {
 
 
   return (
