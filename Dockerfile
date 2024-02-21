@@ -13,4 +13,5 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf *
 COPY --from=build /app/build .
 EXPOSE 80
+CMD ["npm", "start"]
 ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
