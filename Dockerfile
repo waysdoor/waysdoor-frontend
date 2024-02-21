@@ -5,7 +5,7 @@ COPY package.json .
 RUN npm install
 COPY . .
 RUN npm run build
-CMD ["npm", "start"]
+
 RUN rm -rf node_modules
 
 # Step 2: Server With Nginx
@@ -14,5 +14,5 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf *
 COPY --from=build /app/build .
 EXPOSE 80
-
+CMD ["npm", "start"]
 ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
