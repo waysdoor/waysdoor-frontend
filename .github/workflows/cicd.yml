@@ -22,6 +22,8 @@ jobs:
     needs: build
     runs-on: [self-hosted]    
     steps:
+      - name: Delete Old Container
+        run: docker rm -f reactContainer
       - name: Pull image from docker hub
         run: docker pull g4urav/waysdoor_cicd:latest 
       - name: Delete Old Container
