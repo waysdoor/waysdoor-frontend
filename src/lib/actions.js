@@ -1,5 +1,6 @@
 "use server"
 
+import API_BASE_URL from "@/utils/baseURL";
 import axios from "axios";
 
 export  async function submitPostForm(prevstate,formdata) {
@@ -10,7 +11,7 @@ export  async function submitPostForm(prevstate,formdata) {
         formdatatosend.append('description', description);
         formdatatosend.append('image', image);
         formdatatosend.append('author','Gaurav')
-        const response = await axios.post('http://localhost:8080/api/add-post', formdatatosend);
+        const response = await axios.post(`${API_BASE_URL}/api/add-post`, formdatatosend);
         return {...prevstate, success: true ,status:Object.keys(response.data)[0] };
     } catch (error) {
         console.log(error.response.data);

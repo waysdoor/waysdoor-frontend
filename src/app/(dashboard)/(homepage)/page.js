@@ -1,11 +1,12 @@
 import PostForm from "@/components/add-post/PostForm";
 import AllPosts from "@/components/AllPosts/AllPosts";
+import API_BASE_URL from "@/utils/baseURL";
 import axios from "axios";
 
 
 const getPosts = async () => {
 
-  const response = await axios.get('http://localhost:8080/api/posts');
+  const response = await axios.get(`${API_BASE_URL}/api/posts`);
   return response.data;
 }
 

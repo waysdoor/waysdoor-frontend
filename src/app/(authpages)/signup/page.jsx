@@ -12,10 +12,7 @@ export const metadata = {
 function SignupPage() {
   
 
-  const signupGoogleHandler=async(e)=>{
-    "use server"
 
-  }
   return (
 
 <div className="bg-grey-lighter min-h-screen flex flex-col">
@@ -24,7 +21,7 @@ function SignupPage() {
                 
 <h1 className="mb-8 text-3xl text-center">Sign up</h1>
 <form className='w-full flex justify-center'>
-<button onClick={signupGoogleHandler} className="flex w-full justify-center items-center px-4   bg-gray-900 border border-gray-300 rounded-lg shadopx-6 py-2 text-sm font-medium  text-white hover:bg-gray-700 focus:outline-focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+<button  className="flex w-full justify-center items-center px-4   bg-gray-900 border border-gray-300 rounded-lg shadopx-6 py-2 text-sm font-medium  text-white hover:bg-gray-700 focus:outline-focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
 {svgs.google}
 <span className='px-3'>Continue with Google</span>
 </button>
