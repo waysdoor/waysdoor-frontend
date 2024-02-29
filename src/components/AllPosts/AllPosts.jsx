@@ -11,7 +11,7 @@ import React, {  } from 'react'
   return (
     
     <>
-     <h1 className='text-xl mt-10 font-bold text-black'>AllPosts:</h1>
+     <h1 className='text-xl mt-10 font-bold text-black'>All Posts:</h1>
 
     {posts.map((post,index)=>(
         <div key={index} className='p-4 bg-slate-900 text-white  shadow-xl border border-t-2'>
