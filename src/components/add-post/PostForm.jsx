@@ -53,12 +53,12 @@ function PostForm() {
         ></textarea>
          {renderErrors('description')}
         
-        <div className="mb-4">
+        <div className="mb-4 w-fit">
          
           <input
             type="file"
             name='image'
-            className="w-full border rounded py-2 px-3"
+            className="w-full  rounded py-2"
             // onChange={(e) => setSelectedFile(e.target.files[0])}
           />
         </div>
