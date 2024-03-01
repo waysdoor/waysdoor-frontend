@@ -12,11 +12,8 @@ export const metadata = {
 
 export default function AuthLayout({ children }) {
     return (
-        <>
-            
-            {children}
-           
-           
+        <>          
+        {children}        
         </>
     );
 }
