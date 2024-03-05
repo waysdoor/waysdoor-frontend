@@ -11,9 +11,12 @@ function PrevButton() {
 
   const router = useRouter();
   const prevPage = () => {
-    router.back();
+    if (router.asPath !== router.pathname) {
+      router.back();
+    } else {
+      router.push('/');
+    }
   };
-
   return (
    
       <ArrowBackIcon className='cursor-pointer' color='primary' onClick={prevPage} /> 

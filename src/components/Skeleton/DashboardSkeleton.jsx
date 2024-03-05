@@ -3,7 +3,7 @@ import React from 'react'
 
 function DashboardSkeleton() {
   return (
-    <div className="w-full h-screen mx-auto  overflow-hidden  p-8  rounded shadow-md mt-8">
+    <div className="w-full bg-white h-screen mx-auto  overflow-hidden  p-8  rounded shadow-md mt-8">
     
         <div className='mt-5'>
         <Skeleton variant="rectangular" height={118} />
