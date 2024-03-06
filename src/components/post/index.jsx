@@ -7,8 +7,8 @@ import ModeCommentOutlinedIcon from '@mui/icons-material/ModeCommentOutlined';
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined'; 
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { Backdrop, Skeleton, Zoom } from '@mui/material';
- function Post({ post }) {
-    const [liked,setLiked]=useState(false)
+ function Post({ post }) { 
+  const [liked,setLiked]=useState(false)
    const toggleLike=()=>{
     setLiked(!liked)
    } 
