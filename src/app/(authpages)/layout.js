@@ -1,7 +1,5 @@
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
-import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,11 +10,8 @@ export const metadata = {
 
 export default function AuthLayout({ children }) {
     return (
-        <>
-            
-            {children}
-           
-           
+        <>          
+        {children}        
         </>
     );
 }

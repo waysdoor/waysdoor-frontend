@@ -1,5 +1,5 @@
+import Chatbar from "@/components/chatbar/Chatbar";
 import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
 
 
 export const metadata = {
@@ -11,8 +11,10 @@ export default function DashBoardLayout({ children }) {
     return (
         <>   
         <Navbar/>
+        <div className="relative bg-cyan-100 ">
         {children}
-        <Footer/>
+        <Chatbar/>
+        </div>
         </>
    
     );
