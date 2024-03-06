@@ -5,7 +5,8 @@ import React from 'react'
 import {useState,useEffect} from 'react'
 import ModeCommentOutlinedIcon from '@mui/icons-material/ModeCommentOutlined'; 
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined'; 
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';import { Zoom } from '@mui/material';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { Zoom } from '@mui/material';
  function Post({ post }) {
     const [liked,setLiked]=useState(false)
    const toggleLike=()=>{
