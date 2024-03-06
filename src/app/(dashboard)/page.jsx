@@ -5,7 +5,6 @@ import Post from "../../components/Post/Post";
 
 const getPosts = async () => {
   "use server"
-  
   // const response = await axios.get(`${API_BASE_URL}/api/posts`);
   const data = await fetch(`${API_BASE_URL}/api/posts`,{next:{tags:['posts']}})
   const response = await data.json();
