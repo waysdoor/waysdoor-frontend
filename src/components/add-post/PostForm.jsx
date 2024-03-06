@@ -20,7 +20,7 @@ function PostForm() {
         setProgress(100); 
         formRef.current.reset()
         setSelectedFiles([])
-        // router.push('/')
+        router.refresh()
       }else{
         setErrrors(state.status?.errors)
       }  
