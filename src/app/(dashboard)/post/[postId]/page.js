@@ -11,8 +11,8 @@ export const metadata = {
 };
 
 const getSinglePost = async (postId) => {
-  
   const response = await axios.get(`${API_BASE_URL}/api/post/${postId}`);
+
   return response.data;
 }
 export default async function DetailedPost(params) {
@@ -20,7 +20,7 @@ export default async function DetailedPost(params) {
   const post = await getSinglePost(postId)
 
   return (
-   <SinglePost data={post[0]}/>
+   <SinglePost data={post}/>
    
 
   )
