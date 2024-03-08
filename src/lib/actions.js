@@ -5,9 +5,9 @@ import { revalidateTag } from "next/cache";
 
 export async function submitPostForm(prevstate, formdata) {
     try {
-        revalidateTag("posts")
+       
         const { title, description, image } = Object.fromEntries(formdata);
-        console.log(image,"action image")
+        // console.log(image,"action image")
         const formdatatosend = new FormData();
         formdatatosend.append('title', title);
         formdatatosend.append('description', description);
@@ -22,11 +22,11 @@ export async function submitPostForm(prevstate, formdata) {
         }
         
         const responseData = await response.json();
-        console.log("Response in actions", responseData);
+        // console.log("Response in actions", responseData);
 
         return { ...prevstate, success: true, status: Object.keys(responseData)[0] };
     } catch (e) {
-        console.log("Error from actions", e.Error.errors);
+        // console.log("Error from actions", e.Error.errors);
         return { ...prevstate, success: false, status: e.Error };
     }
 }
