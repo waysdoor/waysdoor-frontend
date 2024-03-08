@@ -43,8 +43,8 @@ const [liked, setLiked] = useState(false)
                       
                     <Slider {...settings}>
                         {post.media.map((url, index) => (
-                            <div>
-                                <Image key={index} src={url} width={380} height={80} alt='post-image' />
+                            <div key={index}>
+                                <Image src={url} width={380} height={80} alt='post-image' />
                             </div>
                         ))}
                     </Slider>
